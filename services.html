@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Services - 100SMILES Dental Care</title>
+</head>
+<body>
+  <div id="container">
+    <header class="header">
+      <a href="index.html" class="logo-link" id="ffc-logo">
+        <img src="images/dental-clinic-logo.jpg" alt="100SMILES Dental Care logo" class="logo">
+      </a>
+
+      <!-- Hamburger icon -->
+      <div class="menu-toggle">&#9776;</div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links" id="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="article.html">Articles</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Article Section -->
+      <section class="article-detail">
+        <h2>The Importance of Annual Dental Check-ups</h2>
+        <p>
+          Our smiles bring joy, confidence, and well-being. Prioritizing preventive care with Annual Dental Check-ups ensures long-term dental health.
+        </p>
+
+        <div class="article-points">
+          <div class="point">
+            <h3>1. Early Detection of Health Issues</h3>
+            <p>Routine check-ups allow dentists to detect potential issues early, leading to more effective treatments and better outcomes.</p>
+          </div>
+
+          <div class="point">
+            <h3>2. Preventive Care</h3>
+            <p>Regular cleanings and exams protect against serious dental diseases and contribute to overall health.</p>
+          </div>
+
+          <div class="point">
+            <h3>3. Tailored Nutritional Guidance</h3>
+            <p>Dentists can advise on diet plans that support dental health, personalized for each stage of life.</p>
+          </div>
+
+          <div class="point">
+            <h3>4. Dental Health Evaluation</h3>
+            <p>Comprehensive evaluation of teeth and gums helps prevent dental disease and promotes long-term well-being.</p>
+          </div>
+
+          <div class="point">
+            <h3>5. Holistic Well-being</h3>
+            <p>Annual check-ups improve overall dental wellness, guiding patients on hygiene routines and healthy habits.</p>
+          </div>
+
+          <div class="point">
+            <h3>6. Addressing Behavioural Changes</h3>
+            <p>Dentists can monitor behavioural changes that may indicate underlying health issues and provide tailored advice.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology Section -->
+      <section class="technology-section">
+        <h2>Our New Dental Technologies 💡</h2>
+        <p class="intro">
+          At 100SMILES Dental Care, we stay at the forefront of dental technology to provide our patients with the best care. Here are some of our recent innovations:
+        </p>
+
+        <div class="tech-list-grid">
+          <div class="tech-feature">
+            <h3>Digital X-Rays</h3>
+            <img src="images/xray_teeth.jpeg" alt="Digital X-ray showing teeth" class="tech-header-image">
+            <p>High-resolution images with minimal radiation exposure allow for faster and more accurate diagnoses.</p>
+          </div>
+
+          <div class="tech-feature">
+            <h3>Intraoral Cameras</h3>
+            <img src="images/Intraoral_Cameras.jpeg" alt="Intraoral camera image" class="tech-header-image">
+            <p>Capture detailed images of your teeth and gums for early detection and patient education.</p>
+          </div>
+
+          <div class="tech-feature">
+            <h3>Laser Dentistry</h3>
+            <img src="images/laser.jpeg" alt="Laser dentistry in action" class="tech-header-image">
+            <p>Minimally invasive procedures with reduced pain and faster healing times for gum therapy, cavity detection, and whitening.</p>
+          </div>
+
+          <div class="tech-feature">
+            <h3>CAD/CAM Technology</h3>
+            <img src="images/cad_cam.jpeg" alt="CAD/CAM dental restoration" class="tech-header-image">
+            <p>Create precise and custom dental restorations in a single visit for perfect fit and natural appearance.</p>
+          </div>
+
+          <div class="tech-feature">
+            <h3>3D Printing</h3>
+            <img src="images/AdobeStock_3Dteeth.jpeg" alt="3D printed dental model" class="tech-header-image">
+            <p>Accurate dental models, surgical guides, and custom appliances for precise treatment planning.</p>
+          </div>
+
+          <div class="tech-feature">
+            <h3>Teledentistry</h3>
+            <img src="images/teledenstiry.jpeg" alt="Teledentistry virtual consultation" class="tech-header-image">
+            <p>Virtual consultations allow us to assess concerns and plan treatments from home.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+      <p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+    </footer>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menuLinks = document.getElementById('menu-links');
+    const logo = document.getElementById('ffc-logo');
+
+    menuToggle.addEventListener('click', () => {
+        menuLinks.classList.toggle('show');
+        logo.style.display = menuLinks.classList.contains('show') ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>

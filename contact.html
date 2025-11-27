@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--This website template was created by : Suman Khanal-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Contact - 100SMILES Dental Care</title>
+</head>
+
+<body>
+  <div id="container">
+    <!-- Header: Logo and Navigation -->
+    <header class="header">
+      <!-- Logo linking to Home page -->
+      <a href="index.html" class="logo-link" id="ffc-logo">
+        <img src="images/dental-clinic-logo.jpg" alt="100SMILES Dental Care logo" class="logo">
+      </a>
+
+
+      <!-- Hamburger menu icon for mobile view -->
+      <div class="menu-toggle">&#9776;</div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links" id="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="article.html">Article</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Free Checkup Event Section -->
+      <section id="free-checkup-details" class="event-detail">
+        <h1>Get a Free Dental Checkup at 100SMILES Dental Care*</h1>
+        <!-- Intro paragraph -->
+        <p class="intro-paragraph">
+          Are you ready to take the first step towards a healthier, brighter smile? 100SMILES Dental Care is excited to
+          offer a FREE dental checkup on Saturday, 5th July starting 9 a.m! This is the perfect opportunity to
+          ensure your dental health is in top shape without any cost.
+        </p>
+        <!-- Booking Information Grid -->
+        <div class="booking-info-grid">
+          <!-- Column: How to Book -->
+          <div class="info-column">
+            <h2>How to Book Your Free Checkup:</h2>
+            <ul>
+              <li><strong>Call Us to schedule your appointment :</strong>
+                <p class="tel-link b"> <a href=" Call us today at tel: +61750005599"> Call us today at 61750005599</a>
+                </p>
+              </li>
+              <li><strong>Email Us:</strong> Send an email to <a
+                  href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a> with your
+                preferred time slot.</li>
+              <!-- <p><a href="mailto:admin@100smilesdentalcare.com.au" class="email-link">admin@100smilesdentalcare.com.au</a></p> -->
+              <li><strong>Visit Us:</strong> Drop by our clinic at 195 Fantail Street, Cairnville, Queensland, and
+                our friendly receptionist will assist you.</li>
+              <!-- Embedded Google Map showing the clinic location -->
+              <section class="contact-map">
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.550279428673!2d-71.05353172351307!3d42.34595797119482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7f1d087c25%3A0x9a6c8a19f9a8358c!2s1275%20Channel%20Center%20St%2C%20Boston%2C%20MA%2002210%2C%20USA!5e0!3m2!1sen!2sus!4v1739811123456!5m2!1sen!2sus"
+                    width="600" height="400" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Location of 100SMILES Dental Care">
+                  </iframe>
+                </div>
+              </section>
+            </ul>
+          </div>
+          <!-- Column: Features of Free Checkup -->
+          <div class="checkup-features-stylish">
+            <!-- Individual Feature Card -->
+            <div class="feature-card">
+              <span class="icon">&#x1F50D;</span>
+              <h3>Free Examination</h3>
+              <p>Our experienced dentists will conduct a comprehensive examination of your teeth and gums to identify
+                any potential issues.</p>
+            </div>
+
+            <div class="feature-card">
+              <span class="icon">&#x2728;</span>
+              <h3>Advance Booking Cleanup</h3>
+              <p>Enjoy a professional cleaning to remove plaque and tartar, leaving your teeth feeling fresh and clean.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <span class="icon">&#x1F4AD;</span>
+              <h3>Personalized Advice</h3>
+              <p>Receive personalized advice on maintaining your oral health and preventing future dental problems.</p>
+            </div>
+
+            <div class="feature-card">
+              <span class="icon">&#x1F4C3;</span>
+              <h3>Treatment Plan</h3>
+              <p>If any issues are detected, we will provide you with a detailed treatment plan and discuss the best
+                options for your dental care.</p>
+            </div>
+
+          </div><!-- End checkup-features-stylish -->
+        </div><!-- End booking-info-grid -->
+
+
+        <hr>
+      </section>
+      <p class="disclaimer">*Limited spots available. Advance booking required.</p>
+      <!-- Form Section for Booking -->
+      <h2>Book Your Appointment Now</h2>
+
+      <div id="form">
+        <h2>Complete the form below to begin your free trial.</h2>
+        <!-- Contact Form -->
+        <form class="form-grid" name="myForm" action="form/submitted.html" onsubmit="return validateForm()">
+          <!-- Start Form -->
+          <!-- Fieldset: Customer Information -->
+          <fieldset>
+
+            <legend>Customer Information</legend>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName">
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone">
+          </fieldset>
+          <fieldset>
+            <!-- Fieldset: Additional Information -->
+            <legend>Additional Information</legend>
+            <p>I would like more information about:</p>
+            <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Doctor Appointment">Doctor
+              Appointment</label>
+            <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Dental Surgery">Dental
+              Surgery</label>
+            <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Report">Report</label>
+          </fieldset>
+          <fieldset>
+            <!-- Fieldset: Referral Source -->
+            <legend>Referral Source</legend>
+            <label for="reference">How did you find us?</label>
+            <select name="reference" id="reference">
+              <option value="ad">Advertisement</option>
+              <option value="friend">Friend</option>
+              <option value="google">Google</option>
+              <option value="social">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="questions"> Questions?</label>
+            <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <input type="submit" id="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 100SMILES Dental Care. All Rights Reserved.</p>
+      <p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+    </footer>
+  </div>
+  <!-- External JS for form validation -->
+  <script src="form/script.js"></script>
+
+</body>
+
+</html>
