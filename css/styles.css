@@ -403,6 +403,24 @@ main {
 
 
 @media screen and (max-width: 630px) {
+     fieldset {
+    padding: 1.2rem;
+  }
+  legend {
+    font-size: 1.1rem;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: 220px;       
+    object-fit: cover !important;
+  }
+    
     .article-detail h2 {
     font-size: 1.8rem;
   }
@@ -609,17 +627,24 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
-
 .team-photo {
-    width: 100%;
-    max-width: 180px;
-    height: 180px;
-    object-fit: contain;
-    border-radius: 15px;
-    margin-bottom: 1rem;
-    border: 3px solid #353cff;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
 }
+
+/* 
+.team-photo {
+  width: 100%;
+  max-width: 260px;      
+  height: 200px;         
+  object-fit: cover;     
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+} */
 
 .team-member h3 {
     font-size: 1.1rem;
@@ -640,17 +665,7 @@ main {
     line-height: 1.5;
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 630px) {
-    .team-section h2 {
-        font-size: 1.6rem;
-    }
 
-    .team-photo {
-        height: 150px;
-        max-width: 150px;
-    }
-}
 
 .welcome {
   margin: 50px auto;
@@ -939,15 +954,6 @@ fieldset input[type="radio"] {
   margin-bottom: 10px;
 }
 
-/* Responsive tweak */
-@media (max-width: 600px) {
-  fieldset {
-    padding: 1.2rem;
-  }
-  legend {
-    font-size: 1.1rem;
-  }
-}
 
  #form {
 margin-top: 2%;
